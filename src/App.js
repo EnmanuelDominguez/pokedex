@@ -59,21 +59,6 @@ function App() {
         console.log('There was an ERROR: ', error);
       });
   }
-  // Función para validar el tipo y mostrar en pantalla el correspondiente
-  const validarTipo = () => {
-    let pokeType = pokemon && pokemon.types[0].type.name
-    if (pokemon !== null) {
-      if (pokeType !== globalType) {
-        return (
-          <div style={{ marginLeft: '6px' }}> 2: {pokemon && pokemon.types[1].type.name}</div>
-        )
-      } else {
-        return (
-          <div style={{ marginLeft: '6px' }}> 1: {pokemon && pokemon.types[0].type.name}</div>
-        )
-      }
-    }
-  }
   // Función para exportar a CSV
   const exportToCsv = () => {
     let Results = [
@@ -253,7 +238,7 @@ function App() {
           <div className="datos_pokedex">
             {/* Se imprimen en pantalla los datos del pokémon aleatorio */}
             Pokemon: {pokemon && pokemon.name}<br />
-            <div style={{ display: 'flex', justifyContent: 'center' }}>Tipo {validarTipo()}</div>
+            Tipo: {pokemon && pokemon.types[0].type.name}<br/>
             Hp:{pokemon && pokemon.stats[0].base_stat}<br />
             Ataque: {pokemon && pokemon.stats[1].base_stat}<br />
             Defensa:{pokemon && pokemon.stats[2].base_stat}<br />
