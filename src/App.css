@@ -1,0 +1,342 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: rgb(211, 77, 95);
+  min-height: 15%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 5vmin);
+  color: white;
+}
+
+.ico {
+  height: 15vh;
+}
+
+.font-face-psn {
+  font-family: "PokemonSolidNormal";
+  -webkit-text-stroke: 0.03em black;
+}
+
+.poketxt {
+  background: linear-gradient(rgb(255, 255, 255), rgb(199, 199, 199));
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: -0.05em;  
+}
+
+.pokedex {
+  border: 5px;
+  margin: 2.5vh auto;
+  display: flex;
+  width: 36vw;
+  height: 79.8vh;
+  background-color: #d3f5f2;
+  border-top: 0.1vh solid black;
+  border-bottom: 0.1vh solid black;
+  border-right: 0.1vh solid black;
+  border-left: 0.1vh solid black;
+}
+
+.botones_pokedex{
+  top: 42vh;
+  width: 36.1%;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+
+.botones_pokedex button{
+  background-color: transparent;
+  border: 0;
+}
+
+.datos_pokedex{
+  font-size: 0.8vw;
+  top: 57.6vh;
+  width: 36.1%;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  font-family: "PokemonClassic";
+  }
+
+  /* ESTÉTICA DEL POKÉDEX */
+  /* ------------------------------------------------------------------------ */
+.poke-top {
+  rotate: calc(315.2deg);
+  position: absolute;
+  top: 29.9vh;
+  left: 45.8vw;
+  height: 12vh;
+  width: 6vw;
+  border-radius: 50%;
+  background-color: transparent;
+  border-top: 2.638vh solid black;
+  border-right: 2.638vh solid black;
+  border-bottom: 2.638vh solid transparent;
+  border-left: 2.638vh solid transparent;
+}
+
+.poke-top2 {
+  rotate: calc(315.2deg);
+  position: absolute;
+  top: 27.5vh;
+  left: 44.6vw;
+  height: 20vh;
+  width: 10vw;
+  border-radius: 50%;
+  background-color: transparent;
+  border-top: 1vh solid black;
+  border-right: 1vh solid black;
+  border-bottom: 1vh solid transparent;
+  border-left: 1vh solid transparent;
+}
+
+.poke-top3 {
+  position: absolute;
+  top: 37.5vh;
+  left: 30.5vw;
+  width: 250px;
+  height: 1vh;
+  background: black;
+}
+
+.poke-top4 {
+  position: absolute;
+  top: 37.5vh;
+  left: 53.5vw;
+  width: 250px;
+  height: 1vh;
+  background: black;
+}
+
+.poke-top5 {
+  rotate: calc(315.2deg);
+  position: absolute;
+  top: 27.2vh;
+  left: 44.75vw;
+  height: 16vh;
+  width: 8vw;
+  border-radius: 50%;
+  background-color: transparent;
+  border-top: 2.8vh solid red;
+  border-right: 2.8vh solid red;
+  border-bottom: 2.638vh solid transparent;
+  border-left: 2.638vh solid transparent;
+}
+
+.poke-top6 {
+  position: absolute;
+  top: 16vh;
+  left: 30.5vw;
+  width: 250px;
+  height: 22vh;
+  border-radius: 25% 0 0 0;
+  background: rgb(209, 48, 70);
+}
+
+.poke-top7 {
+  position: absolute;
+  top: 16vh;
+  left: 53.5vw;
+  width: 250px;
+  height: 22vh;
+  border-radius: 0 25% 0 0;
+  background: rgb(209, 48, 70);
+}
+
+.poke-top8 {
+  position: absolute;
+  top: 16vh;
+  left: 40.5vw;
+  width: 250px;
+  height: 14vh;
+  background: rgb(209, 48, 70);
+}
+
+.poke-bot {
+  rotate: calc(135.2deg);
+  position: absolute;
+  top: 70vh;
+  left: 45.8vw;
+  height: 12vh;
+  width: 6vw;
+  border-radius: 50%;
+  background-color: transparent;
+  border-top: 2.638vh solid black;
+  border-right: 2.638vh solid black;
+  border-bottom: 2.638vh solid transparent;
+  border-left: 2.638vh solid transparent;
+}
+
+.poke-bot2 {
+  rotate: calc(135.2deg);
+  position: absolute;
+  top: 67.7vh;
+  left: 44.6vw;
+  height: 20vh;
+  width: 10vw;
+  border-radius: 50%;
+  background-color: transparent;
+  border-top: 1vh solid black;
+  border-right: 1vh solid black;
+  border-bottom: 1vh solid transparent;
+  border-left: 1vh solid transparent;
+}
+
+.poke-bot3 {
+  position: absolute;
+  top: 78.55vh;
+  left: 30.3vw;
+  width: 250px;
+  height: 1vh;
+  background: black;
+}
+
+.poke-bot4 {
+  position: absolute;
+  top: 78.55vh;
+  left: 53.5vw;
+  width: 250px;
+  height: 1vh;
+  background: black;
+}
+
+.poke-bot5 {
+  rotate: calc(135.2deg);
+  position: absolute;
+  top: 68.5vh;
+  left: 44.75vw;
+  height: 16vh;
+  width: 8vw;
+  border-radius: 50%;
+  background-color: transparent;
+  border-top: 2.8vh solid red;
+  border-right: 2.8vh solid red;
+  border-bottom: 2.638vh solid transparent;
+  border-left: 2.638vh solid transparent;
+}
+
+.poke-bot6 {
+  position: absolute;
+  top: 78.55vh;
+  left: 53.5vw;
+  width: 250px;
+  height: 20vh;
+  border-radius: 0 0 25% 0;
+  background: rgb(209, 48, 70);
+}
+
+.poke-bot7 {
+  position: absolute;
+  top: 78.55vh;
+  left: 30.3vw;
+  width: 250px;
+  height: 20vh;
+  border-radius: 0 0 0 25%;
+  background: rgb(209, 48, 70);
+}
+
+.poke-bot8 {
+  position: absolute;
+  top: 85.55vh;
+  left: 40.5vw;
+  width: 250px;
+  height: 13vh;
+  background: rgb(209, 48, 70);
+}
+
+@media screen and (min-width: 0px) and (max-width: 1500px) {
+
+  .poke-bot,
+  .poke-bot2,
+  .poke-bot3,
+  .poke-bot4,
+  .poke-bot5,
+  .poke-bot6,
+  .poke-bot7,
+  .poke-bot8,
+  .poke-top,
+  .poke-top2,
+  .poke-top3,
+  .poke-top4,
+  .poke-top5,
+  .poke-top6,
+  .poke-top7,
+  .poke-top8 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1540px) and (max-width: 1980px) {
+
+  .poke-bot,
+  .poke-bot2,
+  .poke-bot3,
+  .poke-bot4,
+  .poke-bot5,
+  .poke-bot6,
+  .poke-bot7,
+  .poke-bot8,
+  .poke-top,
+  .poke-top2,
+  .poke-top3,
+  .poke-top4,
+  .poke-top5,
+  .poke-top6,
+  .poke-top7,
+  .poke-top8 {
+    display: none;
+  }
+}
+
+.poke-mid {
+
+}
+.poke-mid-button{
+  font-family: 'PokemonClassic';
+  font-size: 0.5vw;
+  background-color: transparent;
+  border-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 83.2vh;
+  left: 34.74vw;
+  height: 5vw;
+  width: 5vw;
+  border-radius: 50%;
+  background-color: white;
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+}
+.poke-mid-button2{
+  font-family: 'PokemonClassic';
+  font-size: 0.5vw;
+  background-color: transparent;
+  border-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 83.2vh;
+  left: 60vw;
+  height: 5vw;
+  width: 5vw;
+  border-radius: 50%;
+  background-color: white;
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+}
+  /* FINAL ESTÉTICA DEL POKÉDEX */
+  /* ------------------------------------------------------------------------ */
